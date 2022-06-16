@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "stdbool.h": "c"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/Users/jleroux/Workspace/push_swap",
+            "binaryPath": "/Users/jleroux/Workspace/push_swap/push_swap",
+            "binaryArgs": []
+        }
+    ]
+}
