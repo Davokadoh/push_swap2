@@ -1,18 +1,15 @@
-make test --dry-run --keep-going --print-directory
-make: Entering directory `/Users/jleroux/Workspace/push_swap'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./libft clean
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/jo/Save/Workspace/42/push_swap2'
+/Library/Developer/CommandLineTools/usr/bin/make -C ./libft
+make[1]: Entering directory `/Users/jo/Save/Workspace/42/push_swap2/libft'
+make[1]: Leaving directory `/Users/jo/Save/Workspace/42/push_swap2/libft'
+mkdir -p .
+cc -c -Wall -Wextra -Werror -g -fsanitize=address -fno-omit-frame-pointer -o push_swap.o srcs/push_swap.c -I./includes -I./libft
+cc -c -Wall -Wextra -Werror -g -fsanitize=address -fno-omit-frame-pointer -o copy_strs.o srcs/copy_strs.c -I./includes -I./libft
+cc -c -Wall -Wextra -Werror -g -fsanitize=address -fno-omit-frame-pointer -o free_strs.o srcs/free_strs.c -I./includes -I./libft
+cc -c -Wall -Wextra -Werror -g -fsanitize=address -fno-omit-frame-pointer -o is_int.o srcs/is_int.c -I./includes -I./libft
+make: Leaving directory `/Users/jo/Save/Workspace/42/push_swap2'
  
-make[1]: Entering directory `/Users/jleroux/Workspace/push_swap/libft'
-rm -f ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o ft_lstadd_back.o ft_lstdelone.o ft_lstclear.o ft_lstiter.o ft_lstmap.o
- 
-make[1]: Leaving directory `/Users/jleroux/Workspace/push_swap/libft'
-rm -f  ./push_swap.o  ./copy_strs.o  ./free_strs.o  ./is_int.o 
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./libft fclean
-make[1]: Entering directory `/Users/jleroux/Workspace/push_swap/libft'
-rm -f ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o ft_lstadd_back.o ft_lstdelone.o ft_lstclear.o ft_lstiter.o ft_lstmap.o
-rm -f libft.a
-make[1]: Leaving directory `/Users/jleroux/Workspace/push_swap/libft'
-rm -f push_swap
-./push_swap 4 3 2 1
-make: Leaving directory `/Users/jleroux/Workspace/push_swap'
- 
+make[1]: *** No targets specified and no makefile found.  Stop.
+make: *** [libft/libft.a] Error 2
+

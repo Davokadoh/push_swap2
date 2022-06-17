@@ -1,4 +1,4 @@
-CFLAGS 			=	-Wall -Wextra -Werror -g -fsanitize=address -fno-omit-frame-pointer
+CFLAGS 			=	-Wall -Wextra -Werror #-fsanitize=address
 TARGET 			=	push_swap
 SRCS_DIR 		=	./srcs
 OBJS_DIR 		=	.
@@ -38,7 +38,6 @@ $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c | $(OBJS_DIR)
 
 $(TARGET): $(LIBFT_DIR)/libft.a $(OBJS)
 	$(MAKE) -C $(LIBFT_DIR)
-	cp $(LIBFT_DIR)/libft.a $(TARGET)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS) $(LIBS)
 
 $(LIBFT_DIR)/libft.a:

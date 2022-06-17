@@ -4,15 +4,10 @@
 bool    is_int(char *str)
 {
 	int		i;
-	int		sign;
 
 	i = 0;
-	sign = 1;
 	if (str[i] == '-')
-	{
-		sign = -1;
 		i++;
-	}
 	while (str[i] >= '0' && str[i] <= '9')
 		i++;
 	if (i == 0)

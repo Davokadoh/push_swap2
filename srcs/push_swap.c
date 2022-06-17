@@ -80,7 +80,7 @@ int		main(int argc, char **argv)
 
     if (argc < 2)
     {
-        write(2, "Usage: ./split [string]\n", 24);
+        write(2, "Error\n", 24);
         return (1);
     }
     else if (argc == 2)
@@ -93,4 +93,5 @@ int		main(int argc, char **argv)
     print_ints(ints, size);
     free(ints);
     free_strs(strs);
+    return (0);
 }
