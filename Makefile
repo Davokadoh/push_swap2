@@ -9,7 +9,10 @@ LIBS			=	$(LIBFT_DIR)/libft.a
 _SRCS 			=	push_swap.c \
 					copy_strs.c \
 					free_strs.c \
+					strs_to_ints.c \
+					sort_ints.c \
 					is_int.c \
+					count_arr.c \
 
 OBJS_BONUS = $(patsubst %.c, $(OBJS_DIR)/%.o, $(_SRCS_BONUS))
 	

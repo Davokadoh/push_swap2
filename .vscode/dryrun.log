@@ -1,15 +1,73 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory `/Users/jo/Save/Workspace/42/push_swap2'
+cc -c -Wall -Wextra -Werror  -o push_swap.o srcs/push_swap.c -I./includes -I./libft
+ 
+cc -c -Wall -Wextra -Werror  -o copy_strs.o srcs/copy_strs.c -I./includes -I./libft
+cc -c -Wall -Wextra -Werror  -o free_strs.o srcs/free_strs.c -I./includes -I./libft
+cc -c -Wall -Wextra -Werror  -o strs_to_ints.o srcs/strs_to_ints.c -I./includes -I./libft
+cc -c -Wall -Wextra -Werror  -o sort_ints.o srcs/sort_ints.c -I./includes -I./libft
+ 
+cc -c -Wall -Wextra -Werror  -o is_int.o srcs/is_int.c -I./includes -I./libft
+ 
+cc -c -Wall -Wextra -Werror  -o count_arr.o srcs/count_arr.c -I./includes -I./libft
+ 
 /Library/Developer/CommandLineTools/usr/bin/make -C ./libft
+ 
 make[1]: Entering directory `/Users/jo/Save/Workspace/42/push_swap2/libft'
+gcc -Wall -Wextra -Werror -I.   -c -o ft_atoi.o ft_atoi.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_bzero.o ft_bzero.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_calloc.o ft_calloc.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_isalnum.o ft_isalnum.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_isalpha.o ft_isalpha.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_isascii.o ft_isascii.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_isdigit.o ft_isdigit.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_isprint.o ft_isprint.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_memchr.o ft_memchr.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_memcmp.o ft_memcmp.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_memcpy.o ft_memcpy.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_memmove.o ft_memmove.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_memset.o ft_memset.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_strchr.o ft_strchr.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_strdup.o ft_strdup.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_strlcat.o ft_strlcat.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_strlcpy.o ft_strlcpy.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_strlen.o ft_strlen.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_strncmp.o ft_strncmp.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_strnstr.o ft_strnstr.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_strrchr.o ft_strrchr.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_tolower.o ft_tolower.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_toupper.o ft_toupper.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_substr.o ft_substr.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_strjoin.o ft_strjoin.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_strtrim.o ft_strtrim.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_split.o ft_split.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_itoa.o ft_itoa.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_strmapi.o ft_strmapi.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_striteri.o ft_striteri.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_putchar_fd.o ft_putchar_fd.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_putstr_fd.o ft_putstr_fd.c
+gcc -Wall -Wextra -Werror -I.   -c -o ft_putendl_fd.o ft_putendl_fd.c
+ 
+gcc -Wall -Wextra -Werror -I.   -c -o ft_putnbr_fd.o ft_putnbr_fd.c
+ar rcs libft.a ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
 make[1]: Leaving directory `/Users/jo/Save/Workspace/42/push_swap2/libft'
-mkdir -p .
-cc -c -Wall -Wextra -Werror -g -fsanitize=address -fno-omit-frame-pointer -o push_swap.o srcs/push_swap.c -I./includes -I./libft
-cc -c -Wall -Wextra -Werror -g -fsanitize=address -fno-omit-frame-pointer -o copy_strs.o srcs/copy_strs.c -I./includes -I./libft
-cc -c -Wall -Wextra -Werror -g -fsanitize=address -fno-omit-frame-pointer -o free_strs.o srcs/free_strs.c -I./includes -I./libft
-cc -c -Wall -Wextra -Werror -g -fsanitize=address -fno-omit-frame-pointer -o is_int.o srcs/is_int.c -I./includes -I./libft
+ 
+cc -Wall -Wextra -Werror  -o push_swap  ./push_swap.o  ./copy_strs.o  ./free_strs.o  ./strs_to_ints.o  ./sort_ints.o  ./is_int.o  ./count_arr.o ./libft/libft.a
 make: Leaving directory `/Users/jo/Save/Workspace/42/push_swap2'
  
-make[1]: *** No targets specified and no makefile found.  Stop.
-make: *** [libft/libft.a] Error 2
-

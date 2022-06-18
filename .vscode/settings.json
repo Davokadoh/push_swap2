@@ -1,6 +1,10 @@
 {
     "files.associations": {
-        "stdbool.h": "c"
+        "stdbool.h": "c",
+        "ios": "c",
+        "locale": "c",
+        "*.tcc": "c",
+        "type_traits": "c"
     },
     "makefile.launchConfigurations": [
         {
