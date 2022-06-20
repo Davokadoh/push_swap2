@@ -3,13 +3,13 @@
 //Free every string in the array of strings.
 void free_strs(char **strs)
 {
-    int		i;
+	int		i;
 
-    i = 0;
-    while (strs[i] != NULL)
-    {
-        free(strs[i]);
-        i++;
-    }
-    free(strs);
+	i = 0;
+	while (strs[i] != NULL)
+	{
+		free(strs[i]);
+		i++;
+	}
+	free(strs);
 }

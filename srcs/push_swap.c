@@ -6,7 +6,7 @@
 int	main(int argc, char **argv)
 {
 	t_stack	*a, *b;
-	   char	**strs;
+	char	**strs;
 
 	if (argc < 2)
 	{
