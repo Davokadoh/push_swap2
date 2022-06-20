@@ -5,7 +5,7 @@
 //If only two args, split the string into an array of strings.
 int		main(int argc, char **argv)
 {
-    int		*ints, size;
+    t_stack	*a, *b;
     char	**strs;
 
     if (argc < 2)
@@ -17,10 +17,13 @@ int		main(int argc, char **argv)
         strs = ft_split(argv[1], ' ');
     else
         strs = copy_strs(argv, argc);
-    size = count_arr(strs);
-    ints = strs_to_ints(strs);
-    sort_ints(ints, size);
-    free(ints);
+    a->size = count_arr(strs);
+    a->arr = strs_to_ints(strs);
+    b->size = a->size;
+    b = create_empty_stack(b->size);
+    sort(a, b);
+    free_stack(a);
+    free_stack(b);
     free_strs(strs);
     return (0);
 }
