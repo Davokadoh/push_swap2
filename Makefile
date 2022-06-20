@@ -49,7 +49,7 @@ $(LIBFT_DIR)/libft.a:
 bonus: $(TARGET)
 
 test: re
-	./$(TARGET) 4 3 2 1
+	./$(TARGET) 4 3 2 1 | ./checker_Mac
 
 norminette:
 	-norminette $(SRCS) ft_printf.h
