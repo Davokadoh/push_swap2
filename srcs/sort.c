@@ -80,22 +80,17 @@ void sort_max(t_stack *a, t_stack *b)
 	int *sorted;
 
 	sorted = dup(a->arr);
-	sorted = sort(sorted);
+	sort_ints(sorted, a->size);
 	pivot = sorted[0];
 	while (a->size > 3)
 	{
 		target1 = top(a, pivot);
 		target2 = bot(a, pivot);
 		if (target1 < target2)
-		{
 			smart_rotate(a, target1);
-			push(a, b);
-		}
 		else
-		{
 			smart_rotate(a, target2);
-			push(a, b);
-		}
+		push(a, b);
 		if (b->arr[0] < b->arr[1])
 			swap(b);
 	}
