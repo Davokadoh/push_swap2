@@ -1,7 +1,5 @@
 #include "push_swap.h"
 
-// Sorts using swap, rotate and reverse rotate.
-// Stack a starts with 3 elements.
 void	sort3(t_stack *a)
 {
 	while (is_sorted(a->arr) == 0)
@@ -15,11 +13,6 @@ void	sort3(t_stack *a)
 	}
 }
 
-// Sorts using push, swap, rotate and reverse rotate.
-// Stack a starts with 3 elements, stack b start with 0 elements.
-// Push twice the first element to b.
-// Call sort3 to sort a.
-// Smart_rotate to push back to a.
 void	sort5(t_stack *a, t_stack *b)
 {
 	if (is_sorted(a->arr) == 1)
@@ -33,7 +26,6 @@ void	sort5(t_stack *a, t_stack *b)
 	push(b, a);
 }
 
-// Call sort3, sort5 or sort_max depending on the size of the first stack.
 void	sort(t_stack *a, t_stack *b)
 {
 	if (a->size == 3)
@@ -58,7 +50,7 @@ int top(t_stack *stack, int pivot)
 	return (i);
 }
 
-int bottom(t_stack *stack, int pivot)
+int bot(t_stack *stack, int pivot)
 {
 	int i;
 
