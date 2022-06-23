@@ -1,11 +1,6 @@
-make test --dry-run --keep-going --print-directory
+make all --dry-run --keep-going --print-directory
 make: Entering directory `/Users/jleroux/Workspace/push_swap'
-cc -Wall -Wextra -Werror    -c -o copy_stack.o copy_stack.c
+make: Nothing to be done for `all'.
  
-cc -c -Wall -Wextra -Werror  -o free_stack.o srcs/free_stack.c -I./includes -I./libft
-cc -c -Wall -Wextra -Werror  -o is_sorted.o srcs/is_sorted.c -I./includes -I./libft
- 
-make: *** No rule to make target `get_smallest.o', needed by `push_swap'.
-
 make: Leaving directory `/Users/jleroux/Workspace/push_swap'
  

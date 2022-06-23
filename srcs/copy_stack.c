@@ -6,8 +6,9 @@ t_stack	copy_stack(t_stack *src)
 	int		i;
 
 	new.size = src->size;
-	i = 0;
-	while (i < new.size)
+	new.arr = (int *)malloc(sizeof(int) * new.size);
+	i = -1;
+	while (++i < new.size - 1)
 		new.arr[i] = src->arr[i];
 	return (new);
 }

@@ -1,4 +1,4 @@
-CFLAGS 			=	-Wall -Wextra -Werror #-fsanitize=address
+CFLAGS 			=	-Wall -Wextra -Werror -fsanitize=address
 TARGET 			=	push_swap
 SRCS_DIR 		=	./srcs
 OBJS_DIR 		=	.
