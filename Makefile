@@ -11,7 +11,6 @@ _SRCS 			=	bubble_sort.c \
 					copy_strs.c \
 					count_arr.c \
 					create_empty_stack.c \
-					free_stack.c \
 					free_strs.c \
 					get_smallest.c \
 					is_int.c \

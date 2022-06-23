@@ -9,7 +9,6 @@ void	rotate(t_stack *stack)
 
 	tmp = stack->arr[0];
 	shift_left(stack->arr, stack->size);
-	stack->size++;
 	stack->arr[stack->size - 1] = tmp;
 }
 
@@ -19,6 +18,5 @@ void	rev_rotate(t_stack *stack)
 
 	tmp = stack->arr[stack->size - 1];
 	shift_right(stack->arr, stack->size);
-	stack->size--;
 	stack->arr[0] = tmp;
 }

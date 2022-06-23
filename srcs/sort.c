@@ -79,7 +79,7 @@ void sort_max(t_stack *a, t_stack *b)
 	sort3(a);
 	while (b->size > 0)
 		push(b, a);
-	free_stack(&sorted);
+	free(sorted.arr);
 }
 
 void	sort(t_stack *a, t_stack *b)

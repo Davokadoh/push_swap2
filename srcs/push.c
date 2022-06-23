@@ -12,4 +12,6 @@ void    push(t_stack *src, t_stack *dst)
 	shift_left(src->arr, src->size);
 	shift_right(dst->arr, dst->size);
 	dst->arr[0] = tmp;
+	src->size--;
+	dst->size++;
 }

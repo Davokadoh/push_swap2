@@ -1,6 +1,14 @@
 make all --dry-run --keep-going --print-directory
 make: Entering directory `/Users/jleroux/Workspace/push_swap'
-make: Nothing to be done for `all'.
+cc -c -Wall -Wextra -Werror -fsanitize=address -o sort.o srcs/sort.c -I./includes -I./libft
  
+cc -c -Wall -Wextra -Werror -fsanitize=address -o strs_to_ints.o srcs/strs_to_ints.c -I./includes -I./libft
+cc -c -Wall -Wextra -Werror -fsanitize=address -o swap.o srcs/swap.c -I./includes -I./libft
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./libft
+ 
+make[1]: Entering directory `/Users/jleroux/Workspace/push_swap/libft'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/Users/jleroux/Workspace/push_swap/libft'
+cc -Wall -Wextra -Werror -fsanitize=address -o push_swap  ./bubble_sort.o  ./copy_stack.o  ./copy_strs.o  ./count_arr.o  ./create_empty_stack.o  ./free_strs.o  ./get_smallest.o  ./is_int.o  ./is_sorted.o  ./push_swap.o  ./push.o  ./rotate.o  ./shift.o  ./smart_rotate.o  ./sort.o  ./strs_to_ints.o  ./swap.o ./libft/libft.a
 make: Leaving directory `/Users/jleroux/Workspace/push_swap'
  

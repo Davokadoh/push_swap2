@@ -21,8 +21,8 @@ int	main(int argc, char **argv)
 	a.arr = strs_to_ints(strs);
 	b = create_empty_stack(a.size);
 	sort(&a, &b);
-	free_stack(&a);
-	free_stack(&b);
+	free(a.arr);
+	free(b.arr);
 	free_strs(strs);
 	return (0);
 }
