@@ -6,17 +6,21 @@ LIBFT_DIR		=	./libft
 INCLUDES_DIRS	=	./includes $(LIBFT_DIR)
 INCLUDES		=	$(addprefix -I,$(INCLUDES_DIRS))
 LIBS			=	$(LIBFT_DIR)/libft.a
-_SRCS 			=	copy_strs.c \
+_SRCS 			=	bubble_sort.c \
+					copy_stack.c \
+					copy_strs.c \
 					count_arr.c \
 					create_empty_stack.c \
+					free_stack.c \
 					free_strs.c \
+					get_smallest.c \
 					is_int.c \
+					is_sorted.c \
 					push_swap.c \
 					push.c \
 					rotate.c \
 					shift.c \
 					smart_rotate.c \
-					sort_ints.c \
 					sort.c \
 					strs_to_ints.c \
 					swap.c \
@@ -53,9 +57,7 @@ $(TARGET): $(LIBFT_DIR)/libft.a $(OBJS)
 $(LIBFT_DIR)/libft.a:
 	$(MAKE) -C $(LIBFT_DIR)
 
-bonus: $(TARGET)
-
-test: re
+test: $(TARGET)
 	./$(TARGET) 4 3 2 1 | ./checker_Mac
 
 norminette:

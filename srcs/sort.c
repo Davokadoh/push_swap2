@@ -1,41 +1,5 @@
 #include "push_swap.h"
 
-void	sort3(t_stack *a)
-{
-	while (is_sorted(a->arr) == 0)
-	{
-		if (a->arr[0] > a->arr[1] && a->arr[0] > a->arr[2])
-			rotate(a);
-		else if (a->arr[0] < a->arr[1] && a->arr[0] > a->arr[2])
-			reverse_rotate(a);
-		else
-			swap(a);
-	}
-}
-
-void	sort5(t_stack *a, t_stack *b)
-{
-	if (is_sorted(a->arr) == 1)
-		return;
-	smart_rotate(a, get_smallest(a->arr));
-	push(a, b);
-	smart_rotate(a, get_smallest(a->arr));
-	push(a, b);
-	sort3(a);
-	push(b, a);
-	push(b, a);
-}
-
-void	sort(t_stack *a, t_stack *b)
-{
-	if (a->size == 3)
-		sort3(a);
-	else if (a->size == 5)
-		sort5(a, b);
-	else
-		sort_max(a, b);
-}
-
 int top(t_stack *stack, int pivot)
 {
 	int i;
@@ -64,16 +28,42 @@ int bot(t_stack *stack, int pivot)
 	return (i);
 }
 
+void	sort3(t_stack *a)
+{
+	while (is_sorted(a) == 0)
+	{
+		if (a->arr[0] > a->arr[1] && a->arr[0] > a->arr[2])
+			rotate(a);
+		else if (a->arr[0] < a->arr[1] && a->arr[0] > a->arr[2])
+			rev_rotate(a);
+		else
+			swap(a);
+	}
+}
+
+void	sort5(t_stack *a, t_stack *b)
+{
+	if (is_sorted(a) == 1)
+		return;
+	smart_rotate(a, get_smallest(a->arr));
+	push(a, b);
+	smart_rotate(a, get_smallest(a->arr));
+	push(a, b);
+	sort3(a);
+	push(b, a);
+	push(b, a);
+}
+
 void sort_max(t_stack *a, t_stack *b)
 {
-	int pivot;
-	int target1;
-	int target2;
-	int *sorted;
+	t_stack	sorted;
+	int		pivot;
+	int		target1;
+	int		target2;
 
-	sorted = dup(a->arr);
-	sort_ints(sorted, a->size);
-	pivot = sorted[0];
+	sorted = copy_stack(a);
+	bubble_sort(&sorted);
+	pivot = sorted.arr[sorted.size/2];
 	while (a->size > 3)
 	{
 		target1 = top(a, pivot);
@@ -89,5 +79,15 @@ void sort_max(t_stack *a, t_stack *b)
 	sort3(a);
 	while (b->size > 0)
 		push(b, a);
-	free(sorted);
+	free_stack(&sorted);
+}
+
+void	sort(t_stack *a, t_stack *b)
+{
+	if (a->size == 3)
+		sort3(a);
+	else if (a->size == 5)
+		sort5(a, b);
+	else
+		sort_max(a, b);
 }

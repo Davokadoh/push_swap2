@@ -20,9 +20,9 @@ int	main(int argc, char **argv)
 	a.size = count_arr(strs);
 	a.arr = strs_to_ints(strs);
 	b = create_empty_stack(a.size);
-	sort(a, b);
-	free_stack(a);
-	free_stack(b);
+	sort(&a, &b);
+	free_stack(&a);
+	free_stack(&b);
 	free_strs(strs);
 	return (0);
 }

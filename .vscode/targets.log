@@ -8,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Thu Jun 23 10:01:44 2022
+# Make data base, printed on Thu Jun 23 12:01:24 2022
 
 # Variables
 
@@ -16,8 +16,6 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
-# environment
-LC_CTYPE = en_US.UTF-8
 # environment
 VSCODE_LOG_NATIVE = false
 # makefile (from `Makefile', line 2)
@@ -31,8 +29,7 @@ INCLUDES = $(addprefix -I,$(INCLUDES_DIRS))
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/jo/Save/Workspace/42/push_swap2
- 
+CURDIR := /Users/jleroux/Workspace/push_swap
 # makefile
 SHELL = /bin/sh
 # environment
@@ -43,18 +40,20 @@ _ = /usr/bin/make
 CFLAGS = -Wall -Wextra -Werror 
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 31)
+SRCS = $(patsubst %, $(SRCS_DIR)/%, $(_SRCS))
 # environment
 VSCODE_VERBOSE_LOGGING = true
+# makefile (from `Makefile', line 30)
+OBJS = $(patsubst %.c, $(OBJS_DIR)/%.o, $(_SRCS))
 # environment
-__CFBundleIdentifier = com.microsoft.VSCode
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/6p/nl959bps7mv_414knwpslxp80000gn/T/vscode-ipc-e1dd707e-870d-4106-9cb2-c124f696bdf8.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cb0w0032r7/T/vscode-ipc-acb057bd-c9c6-4f4b-bb7c-f66c43c91bd4.sock
 # environment
 VSCODE_CWD = /
 # environment
-PATH = /Users/jo/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+PATH = /Users/jleroux/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki
 # makefile (from `Makefile', line 9)
-_SRCS = copy_strs.c count_arr.c create_empty_stack.c free_strs.c is_int.c push_swap.c push.c rotate.c shift.c smart_rotate.c sort_ints.c sort.c strs_to_ints.c swap.c 
+_SRCS = bubble_sort.c copy_stack.c copy_strs.c count_arr.c create_empty_stack.c free_stack.c free_strs.c get_smallest.c is_int.c is_sorted.c push_swap.c push.c rotate.c shift.c smart_rotate.c sort.c strs_to_ints.c swap.c 
 # makefile (from `Makefile', line 3)
 SRCS_DIR = ./srcs
 # environment
@@ -66,16 +65,16 @@ ELECTRON_RUN_AS_NODE = 1
 # makefile (from `Makefile', line 5)
 LIBFT_DIR = ./libft
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.aJGFwgVsXR/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.WXgLtiwcwh/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_PIPE_LOGGING = true
-# makefile (from `Makefile', line 26)
-OBJS = $(patsubst %.c, $(OBJS_DIR)/%.o, $(_SRCS))
+HOMEBREW_TEMP = /tmp/jleroux/Homebrew/Temp
 # environment
-PWD = /Users/jo/Save/Workspace/42/push_swap2
-# makefile (from `Makefile', line 24)
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/jleroux/Workspace/push_swap
+# makefile (from `Makefile', line 28)
 OBJS_BONUS = $(patsubst %.c, $(OBJS_DIR)/%.o, $(_SRCS_BONUS))
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
@@ -84,13 +83,13 @@ INCLUDES_DIRS = ./includes $(LIBFT_DIR)
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /Users/jo
+HOME = /Users/jleroux
 # default
-MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/jo/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = /Users/jleroux/Library/Application Support/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
-LOGNAME = jo
+LOGNAME = jleroux
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
@@ -103,28 +102,28 @@ XPC_FLAGS = 0x0
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
-# makefile (from `Makefile', line 27)
-SRCS = $(patsubst %, $(SRCS_DIR)/%, $(_SRCS))
 # environment
-SHLVL = 2
+HOMEBREW_CACHE = /tmp/jleroux/Homebrew/Caches
+# environment
+SHLVL = 1
 # default
 MAKE_VERSION := 3.81
 # environment
-USER = jo
+USER = jleroux
 # makefile
 .DEFAULT_GOAL := all
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
-MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # default
 .VARIABLES := 
 # environment
-TMPDIR = /var/folders/6p/nl959bps7mv_414knwpslxp80000gn/T/
+TMPDIR = /var/folders/zz/zyxvpxvq6csfxvn_n000cb0w0032r7/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/jo/Library/Application Support/Code/1.68.1-main.sock
+VSCODE_IPC_HOOK = /Users/jleroux/Library/Application Support/Code/1.67.2-main.sock
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -132,7 +131,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.27464101.27464107
+XPC_SERVICE_NAME = com.microsoft.VSCode.2144
 # makefile (from `Makefile', line 4)
 OBJS_DIR = .
 # automatic
@@ -140,9 +139,7 @@ OBJS_DIR = .
 # automatic
 +F = $(notdir $+)
 # environment
-__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
-# environment
-COMMAND_MODE = unix2003
+__CF_USER_TEXT_ENCODING = 0x18B07:0x0:0x0
 # default
 MAKEFILES := 
 # automatic
@@ -162,9 +159,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 80870
+VSCODE_PID = 83485
 # variable set hash-table stats:
-# Load=75/1024=7%, Rehash=0, Collisions=6/118=5%
+# Load=74/1024=7%, Rehash=0, Collisions=5/110=5%
 
 # Pattern-specific Variable Values
 
@@ -172,17 +169,16 @@ VSCODE_PID = 80870
 
 # Directories
 
-# . (device 16777220, inode 27503592): 10 files, no impossibilities.
- 
-# ./srcs (device 16777220, inode 27503672): 16 files, no impossibilities so far.
-# srcs (device 16777220, inode 27503672): 16 files, no impossibilities so far.
+# . (device 16777225, inode 833181): 24 files, no impossibilities.
+# ./srcs (device 16777225, inode 840599): 19 files, 1 impossibilities.
+# srcs (device 16777225, inode 840599): 19 files, 1 impossibilities.
 
-# 42 files, no impossibilities in 3 directories.
+# 62 files, 2 impossibilities in 3 directories.
 
 # Implicit Rules
 
 %.o: ./srcs/%.c | .
-#  commands to execute (from `Makefile', line 47):
+#  commands to execute (from `Makefile', line 51):
 	$(CC) -c $(CFLAGS) -o $@ $^ $(INCLUDES)
 	
 
@@ -198,34 +194,33 @@ shift.o:
 
 .:
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-23 10:01:22
+#  Last modified 2022-06-23 12:01:16
 #  File has been updated.
 #  Successfully updated.
-#  commands to execute (from `Makefile', line 44):
+#  commands to execute (from `Makefile', line 48):
 	@mkdir -p $@
 	
 
-copy_strs.o: srcs/copy_strs.c | .
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: `copy_strs'
-#  Last modified 2022-06-23 10:01:21
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 47):
-	$(CC) -c $(CFLAGS) -o $@ $^ $(INCLUDES)
-	
+# Not a target:
+is_sorted.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+copy_strs.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 all: push_swap
 #  Phony target (prerequisite of .PHONY).
 #  Command-line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
+#  File has not been updated.
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 free_strs.o:
@@ -237,15 +232,6 @@ free_strs.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-
-# Not a target:
-srcs/count_arr.c:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-20 18:07:09
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 is_int.o:
@@ -274,23 +260,17 @@ push.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-23 10:01:16
+#  Last modified 2022-06-23 12:01:15
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-count_arr.o: srcs/count_arr.c | .
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: `count_arr'
-#  Last modified 2022-06-23 10:01:21
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 47):
-	$(CC) -c $(CFLAGS) -o $@ $^ $(INCLUDES)
-	
+# Not a target:
+count_arr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 sort.o:
@@ -298,32 +278,37 @@ sort.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-test: re
+test: push_swap
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 59):
+#  commands to execute (from `Makefile', line 61):
 	./$(TARGET) 4 3 2 1 | ./checker_Mac
+	
+
+bubble_sort.o: srcs/bubble_sort.c | .
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `bubble_sort'
+#  Last modified 2022-06-23 11:57:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 51):
+	$(CC) -c $(CFLAGS) -o $@ $^ $(INCLUDES)
 	
 
 libft/libft.a:
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-23 10:01:21
+#  Last modified 2022-06-23 11:12:41
 #  File has been updated.
 #  Successfully updated.
- 
-#  commands to execute (from `Makefile', line 54):
+#  commands to execute (from `Makefile', line 58):
 	$(MAKE) -C $(LIBFT_DIR)
 	
 
-# Not a target:
-sort_ints.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-bonus: push_swap
+bonus:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -334,7 +319,10 @@ fclean: clean
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 38):
+#  commands to execute (from `Makefile', line 42):
+ 
+make: *** No rule to make target `copy_stack.o', needed by `push_swap'.  Stop.
+
 	$(MAKE) -C $(LIBFT_DIR) fclean
 	rm -f $(TARGET)
 	
@@ -344,19 +332,10 @@ norminette:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 62):
+#  commands to execute (from `Makefile', line 64):
 	-norminette $(SRCS) ft_printf.h
 	-norminette $(LIBFT_DIR)
 	
-
-# Not a target:
-srcs/create_empty_stack.c:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-23 09:55:27
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 .DEFAULT:
@@ -375,7 +354,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 34):
+#  commands to execute (from `Makefile', line 38):
 	$(MAKE) -C $(LIBFT_DIR) clean
 	rm -f $(OBJS) $(OBJS_BONUS)
 	
@@ -386,48 +365,45 @@ push_swap.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-push_swap: libft/libft.a copy_strs.o count_arr.o create_empty_stack.o free_strs.o is_int.o push_swap.o push.o rotate.o shift.o smart_rotate.o sort_ints.o sort.o strs_to_ints.o swap.o
+push_swap: libft/libft.a bubble_sort.o copy_stack.o copy_strs.o count_arr.o create_empty_stack.o free_stack.o free_strs.o get_smallest.o is_int.o is_sorted.o push_swap.o push.o rotate.o shift.o smart_rotate.o sort.o strs_to_ints.o swap.o
 #  Implicit rule search has not been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
+#  File has not been updated.
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
-#  commands to execute (from `Makefile', line 50):
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 54):
 	$(MAKE) -C $(LIBFT_DIR)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS) $(LIBS)
 	
 
-create_empty_stack.o: srcs/create_empty_stack.c | .
+# Not a target:
+copy_stack.o:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: `create_empty_stack'
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := create_empty_stack.o
-# automatic
-# % := 
-# automatic
-# * := create_empty_stack
-# automatic
-# + := srcs/create_empty_stack.c
-# automatic
-# | := .
-# automatic
-# < := srcs/create_empty_stack.c
-# automatic
-# ^ := srcs/create_empty_stack.c
-# automatic
-# ? := srcs/create_empty_stack.c
+#  File has not been updated.
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=3/17=18%
-#  commands to execute (from `Makefile', line 47):
-	$(CC) -c $(CFLAGS) -o $@ $^ $(INCLUDES)
-	
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+create_empty_stack.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+free_stack.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 swap.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+get_smallest.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -439,22 +415,22 @@ strs_to_ints.o:
 #  File has not been updated.
 
 # Not a target:
-srcs/copy_strs.c:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-20 18:06:55
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-# Not a target:
 smart_rotate.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+srcs/bubble_sort.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-23 11:56:59
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 # files hash-table stats:
-# Load=31/1024=3%, Rehash=0, Collisions=4/87=5%
+# Load=33/1024=3%, Rehash=0, Collisions=1/84=1%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -465,8 +441,7 @@ smart_rotate.o:
 # # of strcache buffers: 1
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
- 
 
-# Finished Make data base on Thu Jun 23 10:01:44 2022
+# Finished Make data base on Thu Jun 23 12:01:24 2022
 
  
