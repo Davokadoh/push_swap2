@@ -1,10 +1,6 @@
 #include "push_swap.h"
 
-//Copy first element of src in tmp.
-//Move every element of src one position to the left.
-//Move all elements of dst one position to the right.
-//Move tmp to dst.
-void    push(t_stack *src, t_stack *dst)
+void	push(t_stack *src, t_stack *dst)
 {
 	int	tmp;
 
