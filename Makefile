@@ -56,8 +56,8 @@ $(TARGET): $(LIBFT_DIR)/libft.a $(OBJS)
 $(LIBFT_DIR)/libft.a:
 	$(MAKE) -C $(LIBFT_DIR)
 
-test: $(TARGET)
-	./$(TARGET) 4 3 2 1 | ./checker_Mac
+test: re
+	./$(TARGET) 5 4 3 2 1 | ./checker_Mac 5 4 3 2 1
 
 norminette:
 	-norminette $(SRCS) ft_printf.h

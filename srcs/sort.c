@@ -33,25 +33,38 @@ void	sort3(t_stack *a)
 	while (is_sorted(a) == 0)
 	{
 		if (a->arr[0] > a->arr[1] && a->arr[0] > a->arr[2])
-			rotate(a);
+			rotate('a', a);
 		else if (a->arr[0] < a->arr[1] && a->arr[0] > a->arr[2])
-			rev_rotate(a);
+			rev_rotate('a', a);
 		else
-			swap(a);
+			swap('a', a);
 	}
 }
 
 void	sort5(t_stack *a, t_stack *b)
 {
+	int i;
+
 	if (is_sorted(a) == 1)
 		return;
-	smart_rotate(a, get_smallest(a->arr));
-	push(a, b);
-	smart_rotate(a, get_smallest(a->arr));
-	push(a, b);
+	smart_rotate('a', a, get_smallest(a));
+	push('b', a, b);
+	smart_rotate('a', a, get_smallest(a));
+	push('b', a, b);
 	sort3(a);
-	push(b, a);
-	push(b, a);
+	push('a', b, a);
+	push('a', b, a);
+	i = -1;
+	while (++i < a->size)
+	{
+		printf("%i ", a->arr[i]);
+	}
+	printf("\n");
+	//while (is_sorted(a) == 0)
+	//{
+	//	write(1, "A", 1);
+	//	smart_rotate('a', a, get_smallest(a));
+	//}
 }
 
 void sort_max(t_stack *a, t_stack *b)
@@ -69,16 +82,18 @@ void sort_max(t_stack *a, t_stack *b)
 		target1 = top(a, pivot);
 		target2 = bot(a, pivot);
 		if (target1 < target2)
-			smart_rotate(a, target1);
+			smart_rotate('a', a, target1);
 		else
-			smart_rotate(a, target2);
-		push(a, b);
+			smart_rotate('a', a, target2);
+		push('b', a, b);
 		if (b->arr[0] < b->arr[1])
-			swap(b);
+			swap('b', b);
 	}
 	sort3(a);
 	while (b->size > 0)
-		push(b, a);
+		push('a', b, a);
+	while (is_sorted(a) == 0)
+		smart_rotate('a', a, get_smallest(a));
 	free(sorted.arr);
 }
 

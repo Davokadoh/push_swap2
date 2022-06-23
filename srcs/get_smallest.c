@@ -1,15 +1,18 @@
-int	get_smallest(int *arr)
+#include "push_swap.h"
+
+int	get_smallest(t_stack *stack)
 {
 	int	i;
 	int	smallest;
 
 	i = 0;
-	smallest = arr[0];
-	while (arr[i])
+	smallest = 0;
+	while (i < stack->size)
 	{
-		if (arr[i] < smallest)
-			smallest = arr[i];
+		if (stack->arr[i] < stack->arr[smallest])
+			smallest = i;
 		i++;
 	}
+	printf("%i\n", stack->arr[smallest]);
 	return (smallest);
 }

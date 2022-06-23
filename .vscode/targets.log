@@ -8,10 +8,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Thu Jun 23 12:55:27 2022
+# Make data base, printed on Thu Jun 23 14:16:50 2022
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -161,7 +162,7 @@ LANG = C
 # environment
 VSCODE_PID = 83485
 # variable set hash-table stats:
-# Load=74/1024=7%, Rehash=0, Collisions=5/117=4%
+# Load=74/1024=7%, Rehash=0, Collisions=5/109=5%
 
 # Pattern-specific Variable Values
 
@@ -169,11 +170,11 @@ VSCODE_PID = 83485
 
 # Directories
 
-# . (device 16777225, inode 833181): 23 files, no impossibilities.
-# ./srcs (device 16777225, inode 840599): 18 files, no impossibilities so far.
-# srcs (device 16777225, inode 840599): 18 files, no impossibilities so far.
+# . (device 16777225, inode 833181): 26 files, no impossibilities.
+# ./srcs (device 16777225, inode 840599): 20 files, no impossibilities so far.
+# srcs (device 16777225, inode 840599): 20 files, no impossibilities so far.
 
-# 59 files, no impossibilities in 3 directories.
+# 66 files, no impossibilities in 3 directories.
 
 # Implicit Rules
 
@@ -189,7 +190,7 @@ VSCODE_PID = 83485
 shift.o: srcs/shift.c | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `shift'
-#  Last modified 2022-06-23 12:55:22
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -200,7 +201,7 @@ shift.o: srcs/shift.c | .
 
 .:
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-23 12:55:22
+#  Last modified 2022-06-23 14:16:14
 #  File has been updated.
 #  Successfully updated.
 #  commands to execute (from `Makefile', line 47):
@@ -228,7 +229,7 @@ srcs/is_int.c:
 is_sorted.o: srcs/is_sorted.c | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `is_sorted'
-#  Last modified 2022-06-23 12:55:21
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -240,7 +241,7 @@ is_sorted.o: srcs/is_sorted.c | .
 copy_strs.o: srcs/copy_strs.c | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `copy_strs'
-#  Last modified 2022-06-23 12:55:21
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -255,14 +256,14 @@ all: push_swap
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 free_strs.o: srcs/free_strs.c | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `free_strs'
-#  Last modified 2022-06-23 12:55:21
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -279,7 +280,6 @@ free_strs.o: srcs/free_strs.c | .
 # Not a target:
 srcs/count_arr.c:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-06-23 11:12:32
 #  File has been updated.
 #  Successfully updated.
@@ -289,7 +289,7 @@ srcs/count_arr.c:
 is_int.o: srcs/is_int.c | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `is_int'
-#  Last modified 2022-06-23 12:55:21
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -301,16 +301,17 @@ is_int.o: srcs/is_int.c | .
 # Not a target:
 srcs/sort.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-23 12:55:03
+#  Last modified 2022-06-23 14:12:19
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
+ 
 srcs/get_smallest.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-23 12:05:01
+#  Last modified 2022-06-23 14:10:58
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -319,7 +320,7 @@ srcs/get_smallest.c:
 rotate.o: srcs/rotate.c | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `rotate'
-#  Last modified 2022-06-23 12:55:22
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -331,7 +332,7 @@ rotate.o: srcs/rotate.c | .
 # Not a target:
 srcs/push_swap.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-23 12:05:22
+#  Last modified 2022-06-23 12:56:29
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -346,7 +347,7 @@ srcs/push_swap.c:
 push.o: srcs/push.c | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `push'
-#  Last modified 2022-06-23 12:55:22
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -358,7 +359,7 @@ push.o: srcs/push.c | .
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-23 12:55:17
+#  Last modified 2022-06-23 14:16:05
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -367,7 +368,7 @@ Makefile:
 count_arr.o: srcs/count_arr.c | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `count_arr'
-#  Last modified 2022-06-23 12:55:21
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -379,44 +380,28 @@ count_arr.o: srcs/count_arr.c | .
 sort.o: srcs/sort.c | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `sort'
-#  File does not exist.
+#  Last modified 2022-06-23 14:16:14
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := sort.o
-# automatic
-# % := 
-# automatic
-# * := sort
-# automatic
-# + := srcs/sort.c
-# automatic
-# | := .
-# automatic
-# < := srcs/sort.c
-# automatic
-# ^ := srcs/sort.c
-# automatic
-# ? := srcs/sort.c
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=3/17=18%
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 #  commands to execute (from `Makefile', line 50):
 	$(CC) -c $(CFLAGS) -o $@ $^ $(INCLUDES)
 	
 
-test: push_swap
+test: re
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 60):
-	./$(TARGET) 4 3 2 1 | ./checker_Mac
+	./$(TARGET) 5 4 3 2 1 | ./checker_Mac 5 4 3 2 1
 	
 
 bubble_sort.o: srcs/bubble_sort.c | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `bubble_sort'
-#  Last modified 2022-06-23 12:55:21
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -427,7 +412,7 @@ bubble_sort.o: srcs/bubble_sort.c | .
 
 libft/libft.a:
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-23 12:55:21
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 #  commands to execute (from `Makefile', line 57):
@@ -493,6 +478,15 @@ srcs/create_empty_stack.c:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+srcs/swap.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-23 13:11:17
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 re: fclean all
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -509,10 +503,19 @@ clean:
 	rm -f $(OBJS) $(OBJS_BONUS)
 	
 
+# Not a target:
+srcs/strs_to_ints.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-23 11:12:32
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
 push_swap.o: srcs/push_swap.c | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `push_swap'
-#  Last modified 2022-06-23 12:55:21
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -523,11 +526,11 @@ push_swap.o: srcs/push_swap.c | .
 
 push_swap: libft/libft.a bubble_sort.o copy_stack.o copy_strs.o count_arr.o create_empty_stack.o free_strs.o get_smallest.o is_int.o is_sorted.o push_swap.o push.o rotate.o shift.o smart_rotate.o sort.o strs_to_ints.o swap.o
 #  Implicit rule search has not been done.
-#  File does not exist.
+#  Last modified 2022-06-23 14:16:14
 #  File has been updated.
-#  Needs to be updated (-q is set).
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 #  commands to execute (from `Makefile', line 53):
 	$(MAKE) -C $(LIBFT_DIR)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS) $(LIBS)
@@ -536,7 +539,7 @@ push_swap: libft/libft.a bubble_sort.o copy_stack.o copy_strs.o count_arr.o crea
 copy_stack.o: srcs/copy_stack.c | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `copy_stack'
-#  Last modified 2022-06-23 12:55:21
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -548,7 +551,7 @@ copy_stack.o: srcs/copy_stack.c | .
 create_empty_stack.o: srcs/create_empty_stack.c | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `create_empty_stack'
-#  Last modified 2022-06-23 12:55:21
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -560,7 +563,7 @@ create_empty_stack.o: srcs/create_empty_stack.c | .
 # Not a target:
 srcs/push.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-23 12:38:12
+#  Last modified 2022-06-23 13:38:38
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -569,23 +572,29 @@ srcs/push.c:
 # Not a target:
 srcs/smart_rotate.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-23 12:48:01
- 
+#  Last modified 2022-06-23 14:10:12
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-# Not a target:
-swap.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+swap.o: srcs/swap.c | .
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `swap'
+#  Last modified 2022-06-23 14:16:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 50):
+	$(CC) -c $(CFLAGS) -o $@ $^ $(INCLUDES)
+	
 
 get_smallest.o: srcs/get_smallest.c | .
+ 
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `get_smallest'
-#  Last modified 2022-06-23 12:55:21
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -606,17 +615,23 @@ srcs/shift.c:
 # Not a target:
 srcs/rotate.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-23 12:46:48
+#  Last modified 2022-06-23 13:06:17
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-# Not a target:
-strs_to_ints.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+strs_to_ints.o: srcs/strs_to_ints.c | .
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `strs_to_ints'
+#  Last modified 2022-06-23 14:16:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 50):
+	$(CC) -c $(CFLAGS) -o $@ $^ $(INCLUDES)
+	
 
 # Not a target:
 srcs/copy_strs.c:
@@ -630,7 +645,7 @@ srcs/copy_strs.c:
 smart_rotate.o: srcs/smart_rotate.c | .
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `smart_rotate'
-#  Last modified 2022-06-23 12:55:22
+#  Last modified 2022-06-23 14:16:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -649,7 +664,7 @@ srcs/bubble_sort.c:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # files hash-table stats:
-# Load=46/1024=4%, Rehash=0, Collisions=18/164=11%
+# Load=48/1024=5%, Rehash=0, Collisions=20/176=11%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -661,6 +676,6 @@ srcs/bubble_sort.c:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Jun 23 12:55:27 2022
+# Finished Make data base on Thu Jun 23 14:16:50 2022
 
  
