@@ -1,0 +1,23 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/jo/Desktop/push_swap'
+cc -c -Wall -Wextra -Werror  -o check_input.o srcs/check_input.c -I./includes -I./libft
+ 
+cc -c -Wall -Wextra -Werror  -o push_swap.o srcs/push_swap.c -I./includes -I./libft
+cc -c -Wall -Wextra -Werror  -o push.o srcs/push.c -I./includes -I./libft
+cc -c -Wall -Wextra -Werror  -o rotate.o srcs/rotate.c -I./includes -I./libft
+cc -c -Wall -Wextra -Werror  -o shift.o srcs/shift.c -I./includes -I./libft
+cc -c -Wall -Wextra -Werror  -o smart_rotate.o srcs/smart_rotate.c -I./includes -I./libft
+cc -c -Wall -Wextra -Werror  -o sort.o srcs/sort.c -I./includes -I./libft
+ 
+cc -c -Wall -Wextra -Werror  -o strs_to_ints.o srcs/strs_to_ints.c -I./includes -I./libft
+cc -c -Wall -Wextra -Werror  -o swap.o srcs/swap.c -I./includes -I./libft
+/Library/Developer/CommandLineTools/usr/bin/make -C ./libft
+ 
+make[1]: Entering directory `/Users/jo/Desktop/push_swap/libft'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/Users/jo/Desktop/push_swap/libft'
+ 
+cc -Wall -Wextra -Werror  -o push_swap  ./bubble_sort.o  ./check_input.o  ./copy_stack.o  ./copy_strs.o  ./count_arr.o  ./create_empty_stack.o  ./free_strs.o  ./get_biggest.o  ./get_smallest.o  ./is_int.o  ./is_sorted.o  ./push_swap.o  ./push.o  ./rotate.o  ./shift.o  ./smart_rotate.o  ./sort.o  ./strs_to_ints.o  ./swap.o ./libft/libft.a
+ 
+make: Leaving directory `/Users/jo/Desktop/push_swap'
+ 
